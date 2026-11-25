@@ -87,6 +87,10 @@ nav a.active,nav a.active:hover{background:var(--blue);color:var(--ink);border-r
 .vids{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:start}
 .frame{position:relative;height:560px;border-radius:12px;background:#fff;border:1px solid var(--line);overflow:hidden;margin-bottom:12px}
 .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.still{position:absolute;inset:0;display:block;background:#000}
+.still img{width:100%;height:100%;object-fit:cover;display:block}
+.still .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;font-size:22px;padding-left:4px}
+.still:hover .play,.still:focus-visible .play{background:var(--lime)}
 .by{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;margin-bottom:8px;font-size:15px}
 .by a{text-decoration:underline;text-underline-offset:3px;font-weight:600}
 .tag{font-size:12px;line-height:1;font-weight:600;padding:5px 9px;border-radius:999px;background:var(--lime)}
@@ -221,7 +225,7 @@ a{text-decoration:none}
       <p>Wet to styled in 30 seconds, one product per step, face on camera. In yours: “the only 2 steps before my blow-dry”, leave-in spray then hair oil.</p>
     </div>
     <div class="vid">
-      <div class="frame"><iframe src="https://www.instagram.com/p/Db9EAWziEZU/embed" title="Example video by @glimmr" loading="lazy" allowfullscreen></iframe></div>
+      <div class="frame"><a class="still" href="https://www.instagram.com/p/Db9EAWziEZU/" target="_blank" rel="noopener" aria-label="Watch the @glimmr video on Instagram"><img src="glimmr-still.jpg" alt="Still from the @glimmr split-head video: curl cream on one side, no product on the other"><span class="play" aria-hidden="true">▶</span></a></div>
       <div class="by"><b>@glimmr</b><a href="https://www.instagram.com/p/Db9EAWziEZU/" target="_blank" rel="noopener">Watch on Instagram ↗</a></div>
       <h3>Before / After</h3><div class="wt">What to do</div>
       <p>Split-head test: product on one half, nothing on the other, labeled on screen. In yours: Ebb on one side, then show both sides again later in the day.</p>
